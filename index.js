@@ -1,3 +1,13 @@
+// Get the form element
+let form = document.querySelector('form');
+// Add an event listener to the form submission event
+form.addEventListener('submit', (e) => {
+    // Prevent the default form submission behavior
+    e.preventDefault()
+    // Get the to-do task from the form
+    e.target.taskInput.value
+});
+
 // Get a reference to the task input element.
 const taskInput = document.getElementById('task-input');
 // Get a reference to the add task button element.
